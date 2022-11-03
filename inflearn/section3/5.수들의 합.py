@@ -12,9 +12,11 @@ while True:
             rt += 1
         else:
             break
-    elif(tot == M):
+    elif tot == M:
         cnt += 1
         lt = rt-1
         tot = a[lt]
+    else:
+        tot
 
 print(cnt)
