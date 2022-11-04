@@ -1,3 +1,5 @@
+# ㅇㅓ렵다
+
 N, M = map(int, input().split())
 a = list(map(int, input().split()))
 lt = 0
@@ -14,9 +16,10 @@ while True:
             break
     elif tot == M:
         cnt += 1
-        lt = rt-1
-        tot = a[lt]
+        tot -= a[lt]
+        lt += 1
     else:
-        tot
-
+        tot -= a[lt]
+        lt += 1
+    print(tot, end=' ')
 print(cnt)
