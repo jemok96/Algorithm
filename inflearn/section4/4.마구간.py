@@ -12,10 +12,10 @@ lst.sort()
 
 def check(mid):
     cnt = 1
-    ep = lst[0]
-    for i in range(1, N):
-        if lst[i] - ep >= mid:
-            ep = lst[i]
+    x = 0
+    for i in range(N-1):
+        if lst[i+1] - lst[x] >= mid:
+            x = i+1
             cnt += 1
     return cnt
 
