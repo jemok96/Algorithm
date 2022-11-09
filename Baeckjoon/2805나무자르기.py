@@ -1,5 +1,5 @@
 N, K = map(int, input().split())
-a = [*map(int, input().split())]
+a = list(map(int, input().split()))
 a.sort()
 
 lt = 1
