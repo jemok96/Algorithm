@@ -17,7 +17,8 @@ def check(len):
 
 while lt <= rt:
     mid = (lt + rt)//2
-    if check(mid) >= K:
+    print(mid, check(mid))
+    if check(mid) >= K:  # 자르고 남은 나무 길이의 합이 가져갈려는 길이보다 크기때문에  절단기에 설정할 수 있는 높이의 최댓값을 구해줌 => lt = mid +1
         res = mid
         lt = mid + 1
     else:
