@@ -1,13 +1,12 @@
 N, K = map(int, input().split())
-largest = 0
+
 lst = []
 for _ in range(N):
     x = int(input())
     lst.append(x)
-    largest = max(largest, x)
-lt = 1
-rt = largest
 lst.sort()
+lt = 1
+rt = lst[N-1]
 
 
 def check(mid):
