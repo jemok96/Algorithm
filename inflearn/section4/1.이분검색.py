@@ -1,17 +1,16 @@
 N, M = map(int, input().split())
 a = list(map(int, input().split()))
 a.sort()
-lt = a[0]
-rt = a[-1]
-cnt = 0
+lt = 0
+rt = N-1
 
 while lt <= rt:
     mid = (lt+rt) // 2
-    if mid > M:
-        rt = mid - 1
-    elif mid < M:
-        lt = mid+1
 
-    elif mid == M:
-        print(a.index(mid)+1)
+    if a[mid] == M:
+        print(mid+1)
         break
+    elif a[mid] > M:
+        rt = mid-1
+    else:
+        lt = mid+1
