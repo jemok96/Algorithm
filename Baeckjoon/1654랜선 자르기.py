@@ -6,7 +6,7 @@ for _ in range(N):
     x = int(input())
     lst.append(x)
     largest = max(largest, x)
-lt = 0
+lt = 1
 rt = largest
 
 
