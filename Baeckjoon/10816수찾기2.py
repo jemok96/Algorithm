@@ -4,6 +4,7 @@ M = int(input())
 b = list(map(int, input().split()))
 
 count = {}
+
 for x in a:
     if x in count:
         count[x] += 1
