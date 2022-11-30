@@ -1,3 +1,5 @@
+import sys
+input = sys.stdin.readline
 N, M = map(int, input().split())
 names = dict()
 for i in range(1, N+1):
@@ -7,7 +9,7 @@ for i in range(1, N+1):
 
 
 for _ in range(M):
-    s = input()
+    s = input().rstrip()
     if s.isdigit():
         print(names[int(s)])
     else:
