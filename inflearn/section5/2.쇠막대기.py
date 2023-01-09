@@ -1,17 +1,15 @@
-s = input()
+a = input()
 stack = []
 cnt = 0
 
-for i in range(len(s)):
-    if(s[i] == '('):
+for i in range(len(a)):
+    if a[i] == '(':
         stack.append('(')
     else:
-        if(s[i-1] == '('):
+        if a[i-1] == '(':
             stack.pop()
             cnt += len(stack)
         else:
             stack.pop()
             cnt += 1
-print(stack)
 print(cnt)
-# (((()(()())) 2/16 (())()))(()())

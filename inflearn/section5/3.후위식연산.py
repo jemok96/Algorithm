@@ -19,3 +19,7 @@ for x in a:
             while stack and stack[-1] != '(':
                 res += stack.pop()
             stack.pop()
+print(stack)
+while stack:
+    res += stack.pop()
+print(res)
