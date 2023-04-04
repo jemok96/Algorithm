@@ -14,10 +14,9 @@ def DFS(L, sum):
         DFS(L+1, sum)
 
 
-if __name__ == "__main__":
-    n = int(input())
-    a = list(map(int, input().split()))
-    total = sum(a)  # 전체합
+n = int(input())
+a = list(map(int, input().split()))
+total = sum(a)  # 전체합
 
-    DFS(0, 0)
-    print("NO")
+DFS(0, 0)
+print("NO")
